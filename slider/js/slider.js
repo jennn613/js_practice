@@ -1,15 +1,15 @@
 
 const productWrap = document.querySelector('.product_wrap') //감싼 박스
 let productWrapWidth = productWrap.offsetWidth; //감싼 박스 가로
-console.log(productWrapWidth)
+// console.log(productWrapWidth)
 
 const slider = document.querySelector('.product'); //감싼 ul
 let sliderWidth = slider.offsetWidth; //ul의 가로값
 
 const products = document.querySelectorAll('.product_list'); // li박스
-console.log(products)
+// console.log(products)
 let productWidth = products[0].offsetWidth; //li 박스 하나 가로 값
-console.log(productWidth)
+// console.log(productWidth)
 
 const nextBtn =document.querySelector(".next"); //왼쪽 버튼
 const prevBtn=document.querySelector(".prev"); //오른쪽 버튼
@@ -25,26 +25,22 @@ for(let i=0; i<productShow; i++) {
     slider.prepend(cloneProduct); //마지막 박스 복사해서 첫번재 전에 넣기
 }
 
-// let indiWidth = document.querySelector('.indicator');
-// indiWidth.style.width = productWidth + 300 + 'px'; // 인디케이터 width 설정
-
-
 let clonedProducts = document.querySelectorAll('.product_list'); // 박스 전체 선택 + 클론
-let clonedproductsLength = clonedProducts.length; // 원래 개수 + 클론 된 개수;
+let clonedProductsLength = clonedProducts.length; // 원래 개수 + 클론 된 개수;
 
-slider.style.width = sliderWidth * clonedproductsLength + 'px'; // slider 길이 설정
+slider.style.width = sliderWidth * clonedProductsLength + 'px'; // slider 길이 설정
 
 slider.style.position = 'relative';
 slider.style.marginLeft = -(productWidth * productShow) + 'px'; // slider 이동시켜주기
 
-let click = 0;
+let click = 0; // 클릭 횟수 받을 변수
 
 let move ;
 
 let sliderMove = function(){
     move = setInterval(function (){
 
-   click+=1;
+    click+=1;
     slider.style.left = -productWidth * click + 'px';
 
     if(click >= productNum-1) {
@@ -57,7 +53,7 @@ let sliderMove = function(){
 
 let sliderStop = function(){
     clearInterval(move);
-}
+} //slider 움직임 멈춤
 
 sliderMove();
 
@@ -67,7 +63,7 @@ slider.addEventListener('mouseenter', ()=>{
 
 slider.addEventListener('mouseleave', ()=> {
     sliderMove();
-})
+});
 
 nextBtn.addEventListener('mouseenter', ()=>{
     sliderStop();
@@ -75,7 +71,7 @@ nextBtn.addEventListener('mouseenter', ()=>{
 
 nextBtn.addEventListener('mouseleave', ()=> {
     sliderMove();
-})
+});
 
 prevBtn.addEventListener('mouseenter', ()=>{
     sliderStop();
@@ -83,7 +79,7 @@ prevBtn.addEventListener('mouseenter', ()=>{
 
 prevBtn.addEventListener('mouseleave', ()=> {
     sliderMove();
-})
+});
 
 
 
@@ -116,4 +112,3 @@ const indicator = document.querySelector('.indicator');
 
 indicator.style.width = productWidth + 300 + 'px';
 
-console.log(indicator.offsetWidth)
