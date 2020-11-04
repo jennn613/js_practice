@@ -1,0 +1,83 @@
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  border-style: none;
+}
+
+body {
+  margin: 0 auto;
+  padding: 200px;
+}
+
+#miniProduct {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  position: relative;
+}
+
+.hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.indicator {
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicator > button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: salmon;
+}
+
+.indicator > button:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+
+.product_wrap {
+  width: 1000px;
+  height: 600px;
+
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.product {
+  display: block;
+  height: 100%;
+  display: flex;
+}
+
+.product_list {
+  display: block;
+  width: 900px;
+  height: 100%;
+  background-color: lightsalmon;
+}
+
+.product_list > a {
+  width: 100%;
+  height: 100%;
+}
