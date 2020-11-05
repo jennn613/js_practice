@@ -2,7 +2,7 @@ const wrap = document.querySelector('.product'); //div
 wrap.style.overflow = 'hidden';
 
 const slider = document.querySelector('.product_list'); //ul
-const products = document.querySelectorAll ('.product_list_item') //li
+const products = document.querySelectorAll ('.product_list_item'); //li
 let productWidth = products[0].offsetWidth; // 박스 하나 가로 받아오기
 
 let productsNum = products.length; //박스 개수 받아오기

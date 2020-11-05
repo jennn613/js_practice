@@ -41,6 +41,14 @@ body {
   background-color: lightblue;
 }
 
+.product_list_item:nth-child(2) {
+  background-color: khaki;
+}
+
+.product_list_item:last-child {
+  background-color: lightgrey;
+}
+
 .indicator {
   width: auto;
   height: 40px;
