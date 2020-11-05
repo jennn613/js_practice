@@ -62,7 +62,7 @@ let sliderMove = function() {
         if(indiNum >= productsNum - 1) {
             slider.style.left = -productWidth * indiNum + 'px';
             indiNum=-1;
-        };
+        }
         indicator.forEach((d,i) => {
             d.classList.remove('clicked'); //clicked class 제거해주기 = default
         });

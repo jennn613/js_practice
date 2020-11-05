@@ -1,0 +1,107 @@
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#miniProduct {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: lightgrey;
+}
+
+.slider_btn {
+  width: 900px;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.slider_btn > button {
+  width: 100px;
+  height: 100px;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider_btn > button:hover {
+  transform: scale(1.01);
+}
+
+.indicator {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicator_list {
+  width: 100%;
+  height: 100%;
+}
+
+.indicator_list_item {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+}
+
+.indicator_list_item:last-child {
+  margin-right: 0;
+}
+
+.indicator_list_item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: lightpink;
+  border-radius: 50%;
+}
+
+.indicator_list li.active > a {
+  background-color: lightseagreen;
+}
+
+.product {
+  width: 600px;
+  height: 400px;
+  background-color: lightskyblue;
+}
+
+.product_list {
+  width: 600px;
+  height: 100%;
+}
+
+.product_list_item {
+  float: left;
+  width: 600px;
+  height: 100%;
+  background-color: lightslategray;
+}

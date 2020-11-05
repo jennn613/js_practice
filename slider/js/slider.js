@@ -30,18 +30,10 @@ slider.style.marginLeft = - setSlideWidth;
 
 // console.log(products)
 let productWidth = products[0].offsetWidth; //li 박스 하나 가로 값 파악
-console.log(productWidth)
+// console.log(productWidth)
 
 const nextBtn =document.querySelector(".next"); //왼쪽 버튼
 const prevBtn=document.querySelector(".prev"); //오른쪽 버튼
-
-
-
-
-
-
-
-
 
 slider.style.width = setSlideWidth * clonedProductsLength + 'px'; // slider 길이 설정
 
@@ -63,6 +55,15 @@ let move ;
          slider.style.left = -productWidth * click + 'px';
          click = -1;
      }
+
+     indicator.forEach((d,i) => {
+        d.classList.remove('clicked'); //clicked class 제거해주기 = default
+    });
+    if(indiNum >= 0){
+      indicator[indiNum].classList.add('clicked'); //눌렀을 때 추가해주기
+    }else{
+        indicator[indicatorNum-1].classList.add('clicked'); //눌렀을 때 추가해주기 
+    }
 
  }, 2000); // slider 자동 움직임
 };
