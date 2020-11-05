@@ -15,7 +15,8 @@ button {
 
 body {
   margin: 0 auto;
-  padding: 200px;
+  /* padding: 200px; */
+  height: 100%;
 }
 
 #miniProduct {
@@ -54,14 +55,13 @@ body {
 }
 
 .product {
-  display: block;
   height: 100%;
-  display: flex;
+  /* display: flex; */
 }
 
 .product_list {
-  display: block;
-  width: 900px;
+  float: left;
+
   height: 100%;
   background-color: lightsalmon;
 }
