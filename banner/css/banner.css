@@ -19,7 +19,6 @@ body {
   width: 600px;
   height: 500px;
   margin: auto;
-  box-sizing: border-box;
   position: relative;
   background-color: lightgrey;
 }
@@ -91,7 +90,6 @@ body {
 .product {
   width: 600px;
   height: 400px;
-  background-color: lightskyblue;
 }
 
 .product_list {

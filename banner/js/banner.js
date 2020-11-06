@@ -59,7 +59,7 @@ let sliderMove = function() {
 
 let sliderStop = function(){
     clearInterval(move);
-}
+};
 
 
 sliderMove();

@@ -1,0 +1,77 @@
+dl,
+dt,
+dd,
+span,
+i,
+a,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+:root {
+  --color-title: #067;
+  --color-content: #ace;
+}
+
+#wrap {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.menu_title {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-title);
+  border-bottom: 1px solid white;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.menu_title > a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu_contents {
+  width: 100%;
+  height: 0;
+  display: none;
+  background-color: var(--color-content);
+  text-align: center;
+  overflow: hidden;
+}
+.menu_contents > p {
+  margin-top: 30px;
+}
+
+.menu_title.clicked {
+  background-color: #047;
+}
+
+.menu_contents.show {
+  display: block;
+  transition: all 300ms ease-in;
+}
+
+.menu_contents.show.block {
+  height: 200px;
+}
+
+.menu_title_icon.rotate {
+  transform: rotate(180deg);
+  transition: all 300ms ease-in;
+}
