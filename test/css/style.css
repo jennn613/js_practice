@@ -1,0 +1,195 @@
+@import "../css/reset.css";
+
+
+body {
+    width: auto;
+    height: 3200px;
+    background-color: rgba(85,85,85,0.5);
+}
+a { 
+    display: block;
+}
+
+.hidden {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+#wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* basic settings end */
+
+.header{
+    max-width: 1600px;
+    width: 100%;
+    height: 90px;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(85,85,85,0.5);
+}
+
+
+.header_logo{
+    width: 10%;
+    height: 100%;
+    background-color: white;
+}
+
+.header_menu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_menu_list{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+.header_menu_list > a {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color:white;
+    padding-top: 34px;
+    box-sizing: border-box;
+}
+
+/* header end */
+
+.home_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(108, 112, 128);
+    background-attachment: fixed;
+    background-size: cover;
+    transform: translateY(-5%);
+}
+
+.home_img_slider {
+    height: 100%;
+    position: relative;
+}
+
+.home_img_slider > li{
+    float: left;
+    height: 100%;
+}
+
+.home_img_slider > li > img {
+    width: 100%;
+    height: auto;
+}
+
+.home_img_indicator {
+    display: flex;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 4%;
+    right: 8%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(85,85,85,0.5);
+    z-index: 100;
+    border-radius: 30px;
+}
+
+.indicator_wrap {
+ 
+    width: auto;
+    height: 100%;
+}
+
+.indicator_chevron_wrap{
+
+    width: auto;
+    height: 100%;
+}
+
+.indicator {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.indicator > a {
+    width: 100%;
+    height: 100%;
+}
+
+.indicator_chevron_wrap > li {
+float: left;
+width: auto;
+height: auto;
+cursor: pointer;
+}
+
+.indicator_chevron_wrap > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.indicator_chevron_wrap > li > a {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+.indicator.active {
+    background-color: yellow;
+}
+
+.home_img_pic_num {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+    background-color: rgba(85,85,85,0.5);
+    color: white;
+}
+
+
+/* slider end */
+
+.topBtn{
+    width: auto;
+    height: auto;
+    position: fixed;
+    bottom: 6%;
+    right: 6%;
+    font-size: 50px;
+    color: white;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.topBtn.hide {
+  opacity: 0;    
+  transition:opacity 300ms linear;
+}
+
+.focus {
+    background-color: #ff0;
+    outline: 3px solid salmon;
+}
