@@ -1,16 +1,148 @@
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 body {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
+
+#wrap {
+  width: 100%;
+  max-width: 1800px;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#headBox {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: salmon;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+#viewBox {
+  width: 100%;
+  height: 2000px;
+  background-color: lightblue;
+}
+
+#contentBox {
+  width: 100%;
+  height: 1400px;
+  background-color: lightgoldenrodyellow;
+}
+
+#moreBox {
+  width: 80%;
+  height: 1600px;
+  margin: 0 auto;
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+#footBox {
+  width: 100%;
+  height: auto;
+  background-color: lightslategray;
+  padding: 50px 30px;
+}
+
+
+h1 {
+  width: auto;
+  height: auto;
+  font-size: 32px;
+}
+
+h1 > a {
+  display: block;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color:white;
+  font-size: 32px;
+}
+
+.con_landing_box, .more_landing_box {
+  width: 300px;
+  height: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: lightseagreen;
+  color: white;
+  margin: 0 auto;
+  transition: all 500ms linear;
+  opacity: 0;
+}
+
+.con_landing_box { 
+  transform: translateY(-100px);
+}
+
+.more_landing_box {
+  transform: translateX(300px);
+}
+
+.content_area {
+  width: 60%;
+  height: auto;
+  background-color: white;
+  padding: 50px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 100px;
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 500ms linear;
+}
+
+.more_area{
+  width: 60%;
+  height: auto;
+  background-color: white;
+  padding: 50px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 100px;
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translateY(200px);
+}
+
+.action {
+opacity: 1;
+transform: translate(0);
+}
+
+.changeColor { 
+  background-color: lightgreen;
+}
+
+/* .action > .content_area {
+  opacity: 1; transform: translateY(0);
+}
+
+.con_landing_box { transform: translateY(-5rem); }
+
+.more_landing_box { 
+  transform:translateX(-50rem) rotateX(720deg);
+}
+
+#moreBox.action > .more_landing_box { 
+  transform:translate(0) rotateX(0) scale(1.5);
+}
+*/
+
+
+/* #moreBox.changeColor > h2 { 
+  opacity: 1; 
+  position:fixed; 
+  top:0; 
+  right:0;
+  transform:translate(0) rotateX(0);
+} */
