@@ -16,6 +16,39 @@ a {
   background-color: white;
 }
 
+.popUp {
+  width: 96%;
+  height: auto;
+  background-color: silver;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  will-change: auto;
+}
+
+.popUp > p {
+  display: block;
+  width: auto;
+  height: auto;
+  color: white;
+}
+
+.close {
+  width: 10px;
+  height: 16px;
+  padding: 4px;
+  background-color: slategray;
+  color: white;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*  */
+
 #header {
   width: 100%;
   height: 70px;
@@ -77,7 +110,7 @@ a {
 
 #article_ad {
   width: 100%;
-  height: 1000px;
+  height: 1600px;
   background-color: lightslategray;
   padding: 40px;
   box-sizing: border-box;
@@ -92,14 +125,14 @@ a {
 
 #article_f {
   width: 100%;
-  height: 700px;
+  height: 900px;
   background-color: lightgrey;
 }
 
 .tab_content1 {
   width: 100%;
   height: 100%;
-  margin: 80px auto 0 auto;
+  margin: 100px auto 0 auto;
 }
 
 .tab_content1 > dl {
@@ -111,7 +144,7 @@ a {
 
 .tab_content1 > dl > dt {
   float: left;
-  width: 250px;
+  width: 13.88889vw;
   height: 40px;
   line-height:40px; 
   text-transform:uppercase; 
@@ -121,12 +154,16 @@ a {
   color: white;
 }
 
+.tab_content1 > dl > dt:hover {
+  background-color: slategrey;
+}
+
 .tab_content1 > dl > dt:not(:first-child){
   margin-left: 4px;
 }
 
-.clicked {
-  background-color: slategray;
+.tab_content1 > dl > dt.clicked {
+  background-color: gray;
 }
 
 .tab_content1 > dl > dt > a {
@@ -145,6 +182,7 @@ a {
   padding: 50px;
   box-sizing: border-box;
   background-color: lightsteelblue;
+  word-break: keep-all;
 } 
 
 .tab_content1 > dl > dd:first-of-type {
@@ -153,7 +191,88 @@ a {
 
 /* section 1 */
 
+
+#article_s {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(194, 194, 194);
+}
+
+.tab_title_list_wrap {
+  width: 60%;
+  height: 40px;
+  margin: 80px auto 0 auto;
+}
+
+.tab_title_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab_title_list > li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: seagreen;
+}
+
+.tab_title_list > li:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.tab_title_list > li > a {
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.tab_title_list > li.active {
+  background-color: sandybrown;
+}
+
+
+.tab_content2 {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.tab_con2_box {
+  display: none;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tab_con2_box:first-child {
+  display: block;
+}
+
+.tab_con2_box > h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 /* footer */
+
+#footer {
+  width: 100%;
+  height: 400px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  color: white;
+  background-color: slategrey;
+}
 
 /* topBtn */
 

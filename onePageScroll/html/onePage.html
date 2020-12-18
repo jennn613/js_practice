@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="../../reset.css" />
   </head>
   <body>
+    <div class="popUp">
+      <h2 class="hidden">pop up ad</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+       Doloremque molestiae praesentium inventore sint odit. <br />
+       Officia provident necessitatibus repellendus. 
+      </p>
+      <a href="#" class="close">X</a>
+    </div>
  <div id="wrap">
-   <div class="popUp">
-     <h2 class="hidden">pop up ad</h2>
-     <p>
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-      Doloremque molestiae praesentium inventore sint odit. <br />
-      Officia provident necessitatibus repellendus. 
-     </p>
-     <a href="#" class="close"></a>
-   </div>
+
    <header id="header">
      <h1><a href="./onePage.html">Jenny</a></h1>
      <nav class="header_nav">
        <h2 class="hidden">navigation</h2>
        <ul class="header_nav_list">
-         <li><a href="#">home</a></li>
-         <li><a href="#">advertisement</a></li>
-         <li><a href="#">section 1</a></li>
-         <li><a href="#">section 2</a></li>
-         <li><a href="#">footer</a></li>
+         <li><a href="#" data-link="#header">home</a></li>
+         <li><a href="#" data-link="#article_ad">advertisement</a></li>
+         <li><a href="#" data-link="#article_f">section 1</a></li>
+         <li><a href="#" data-link="#article_s">section 2</a></li>
+         <li><a href="#" data-link="#footer">footer</a></li>
        </ul>
      </nav>
    </header>
@@ -63,32 +64,46 @@
    </article>
    <article id="article_s">
     <h2 class="hidden">section 2</h2>
+    <div class="tab_title_list_wrap">
+      <ul class="tab_title_list">
+        <li><a href="#">tab 1</a></li>
+        <li><a href="#">tab 2</a></li>
+        <li><a href="#">tab 3</a></li>
+        <li><a href="#">tab 4</a></li>
+      </ul>
+    </div>
     <div class="tab_content2">
 
-      <dl>
-        <dt><a href="#">tab 1</a></dt>
-        <dd>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-          Doloremque molestiae praesentium inventore sint odit. <br />
-          Officia provident necessitatibus repellendus.</dd>
-        <dt><a href="#">tab 2</a></dt>
-        <dd>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-          Doloremque molestiae praesentium inventore sint odit. <br />
-          Officia provident necessitatibus.</dd>
-        <dt><a href="#">tab 3</a></dt>
-        <dd>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-          Doloremque molestiae inventore. <br />
-          Officia provident necessitatibus repellendus.</dd>
-        <dt><a href="#">tab 4</a></dt>
-        <dd>  Lorem ipsum dolor elit. <br />
-          Doloremque molestiae praesentium inventore sint odit. <br />
-          Officia provident necessitatibus repellendus.</dd>
-      </dl>
-    
+        <div class="tab_con2_box">
+          <h3>tab 1</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+            Doloremque molestiae praesentium inventore sint odit. <br />
+            Officia provident necessitatibus repellendus.</p>
+        </div>
+        <div class="tab_con2_box">
+          <h3>tab 2</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+            Doloremque molestiae praesentium inventore sint odit. <br />
+            Officia provident necessitatibus</p>
+        </div>
+        <div class="tab_con2_box">
+          <h3>tab 3</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+            Doloremque molestiae inventore. <br />
+            Officia provident necessitatibus repellendus.</p>
+        </div>
+        <div class="tab_con2_box">
+          <h3>tab 4</h3>
+          <p>Lorem ipsum dolor elit. <br />
+            Doloremque molestiae praesentium inventore sint odit. <br />
+            Officia provident necessitatibus repellendus.</p>
+        </div>
+
     </div>
    </article>
   </main>
   <footer id="footer">
-    <h2 class="hidden">company information</h2>
+    <h2>company information</h2>
   </footer>
  </div>
  <a href="#" class="topBtn"><span class="hidden">top</span></a>
