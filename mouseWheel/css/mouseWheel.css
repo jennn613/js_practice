@@ -1,0 +1,57 @@
+/* #wrap {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+#headBox {
+  width: 94%;
+  height: 100px;
+  background-color: lightcoral;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#viewBox {
+  width: 100%;
+  height: 100vh;
+  background-color: lightsalmon;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+#conBox_01{ 
+  width: 100%; 
+  height:100vh;
+  background-color: lightgoldenrodyellow;
+}
+
+#conBox_02{ 
+  width: 100%; 
+  height:100vh;
+  background-color: lightgreen;
+}
+
+#conBox_03{ 
+  width: 100%; 
+  height:100vh;
+  background-color:lightgray;
+}
+
+#footBox{ 
+  width: 100%; 
+  height:400px;
+  background-color: lightblue;
+}
+
+h1 >a {
+  font-size: 36px;
+}
+
+h2 {
+
+  font-weight: bold;
+} */
