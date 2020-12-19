@@ -58,7 +58,7 @@ box.forEach((a, i)=> {
 
         imgWrap.style.display = 'block';
         imgWrap.innerHTML = `<div class="img_area">
-        <div class="close"><a href="#">close</a></div>
+        <div class="close"><a href="#"><i class="fas fa-times"></i></a></div>
         <div class="img">
           <p>description</p>
         </div>

@@ -90,7 +90,8 @@ a {
   right: 10px;
   width: auto;
   height: auto;
-  background-color: white;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
   z-index: 100;
 
 }
@@ -98,7 +99,7 @@ a {
 .close > a {
   width: auto;
   height: auto;
-  color: black;
+  font-size: 32px;
 }
 
 .img { 
