@@ -1,0 +1,26 @@
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+.imgBox {
+  position: relative;
+  width: 60%;
+  height: 900px;
+  border: 4px solid #acacac;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.imgBox > img {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
