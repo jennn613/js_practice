@@ -1,16 +1,92 @@
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  width: 100%;
+#wrap {
+  width: 60%;
   height: auto;
   margin: 0 auto;
+  padding-top: 80px;
 }
+
+h1 > a {
+  width: auto;
+  height: auto;
+  color: black;
+  font-size: 28px;
+}
+
+.part {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 30pxs;
+  border: 2px solid #333;
+  background-color: white;
+}
+
+.part > ul {
+  width: 100%;
+  height: auto;
+}
+
+.part > ul > li {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 16px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-bottom: dotted #333;
+  background-color: aqua;
+}
+
+.part .num {
+  float: left; 
+  width: 2rem; 
+  height:100%; 
+  border-right:0.1rem 
+  solid #fff; 
+  margin-right:0.5rem;
+}
+
+.part .image { 
+  float: left; 
+  width:6rem; 
+  height:100%; 
+  margin-right:1rem; 
+  background-repeat: no-repeat; 
+  background-position: 50% 50%; 
+  background-size:contain; 
+}
+
+.part dl { 
+  width: 100%; 
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+.part dt { 
+  font-size:1.2rem; 
+  font-weight: bold; 
+  color:#171717; 
+  margin-bottom:0.1rem; 
+}
+
+.part dd { 
+  font-size: 1rem; 
+  color:#777;
+}
+
+.more_btn { 
+  margin-top:2rem; 
+  width: 100%; 
+  height:3rem; 
+  text-align: center; 
+}
+
+.more_btn a { 
+  width: 7rem; 
+  height:100%; 
+  background-color: #05a; 
+  color:#fff; 
+  font-weight: bold; 
+  border-radius:0.2rem;
+}
+
